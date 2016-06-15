@@ -3,7 +3,7 @@
 ## Description ##
 
 This plugin allows the delegation of SonarQube authentication and authorization to Microsoft Active Directory.
-It automatically logs in user using Single Sign On (SSO) with Active Directory Credentials in Microsoft Active Directory Environments. Active user's windows domain credentials are used to login to SonarQube.
+It automatically logs in a user using Single Sign On (SSO) with Active Directory Credentials in Microsoft Active Directory environments.  An active user's Windows domain credentials are used to login to SonarQube.  Since an Active Directory environment is required, this plugin is applicable only to SonarQube instances running within a Windows operating system.  For SonarQube instances running on non-Windows operating systems, Active Directory should be accessed via the seperate LDAP plug-in.
 
 During the first authentication trial, the SonarQube database is automatically populated with the new user.
 Each time a user logs into SonarQube, the username, the email and the groups this user belongs to that are refreshed in the SonarQube database.
